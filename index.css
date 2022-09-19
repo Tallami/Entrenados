@@ -76,32 +76,54 @@ nav {
   width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/multimedia/fondohome.jpg);
+    url(/imagenes/fondohome.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 
 .box_frase {
   font-weight: bold;
   color: white;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.box_frase h1 {
+  font-size: 50px;
   text-align: center;
+}
+
+.box_frase p {
+  font-weight: 300;
+  display: flex;
+  justify-content: left;
+  font-size: 20px;
 }
 
 .box_eslogan {
   color: white;
   border: 2px solid black;
-  background-color: rgba(0, 0, 0, 0.315);
+  background-color: rgba(0, 0, 0, 0.2);
   margin: 20px;
   padding: 15px;
   font-weight: 300;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .box_eslogan h1 {
   color: rgb(12, 101, 184);
+}
+
+.boton-home:hover {
+  transition: all 0.5s;
 }
 
 .divisor {
@@ -130,6 +152,25 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container-apoyo {
+  background-image: url(/imagenes/running-home.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 400px;
+  position: sticky;
+  text-align: center;
+  padding: 40px;
+}
+
+.container-apoyo h2 {
+  color: white;
+}
+
+.container-apoyo p {
+  color: white;
+  padding: 50px;
 }
 
 .icon {
