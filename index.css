@@ -80,8 +80,8 @@ nav {
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -127,10 +127,10 @@ nav {
 }
 
 .divisor {
-  background-color: rgba(0, 0, 0, 0.904);
-  height: 110px;
+  background-color: rgba(255, 255, 255, 0.788);
+  height: 150px;
   width: 100%;
-  color: white;
+  color: black;
   text-align: center;
   padding-top: 10px;
   display: flex;
@@ -155,28 +155,104 @@ nav {
 }
 
 .container-apoyo {
-  background-image: url(/imagenes/running-home.jpg);
-  background-position: bottom;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/imagenes/fondo-apoyo.jpg);
+  background-position: center;
   background-size: cover;
-  height: 400px;
-  position: sticky;
+  height: 300px;
   text-align: center;
-  padding: 40px;
+  padding: 15px;
 }
 
 .container-apoyo h2 {
   color: white;
+  padding: 15px;
 }
 
 .container-apoyo p {
   color: white;
-  padding: 50px;
+  padding-top: 20px;
 }
 
-.icon {
+.icon-franja {
   display: flex;
   margin-right: 5px;
   align-items: center;
+}
+
+.container-mejoras {
+  background-image: url(/imagenes/fondo-mejoras2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  padding-top: 30px;
+}
+
+.container-texto-mejoras {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-mejoras h3 {
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.texto-mejoras {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 5px;
+}
+
+span {
+  color: rgb(12, 101, 184);
+}
+
+.container-icons-texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-icons {
+  height: 100px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.233);
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginBtn {
+  padding: 9px 25px;
+  background-color: rgb(240, 240, 240);
+  color: rgb(12, 101, 184);
+  border: 1px solid rgb(12, 101, 184);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+
+.loginBtn:hover {
+  background-color: rgb(12, 101, 184);
+  color: #fff;
+  border: 1px solid rgb(12, 101, 184);
+}
+
+.loginDiv {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
 }
 
 /* Whatsapp */
