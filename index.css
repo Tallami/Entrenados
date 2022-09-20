@@ -156,7 +156,7 @@ nav {
 
 .container-apoyo {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/imagenes/fondo-apoyo.jpg);
+    url(imagenes/fondo-apoyo.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -181,7 +181,7 @@ nav {
 }
 
 .container-mejoras {
-  background-image: url(/imagenes/fondo-mejoras2.jpg);
+  background-image: url(imagenes/fondo-mejoras2.jpg);
   background-position: center;
   background-size: cover;
   height: 400px;
