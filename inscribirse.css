@@ -60,7 +60,7 @@ nav {
   content: "";
   width: 0%;
   height: 2px;
-  background: #000;
+  background: rgb(12, 101, 184);
   display: block;
   margin: auto;
   transition: 0.5s;

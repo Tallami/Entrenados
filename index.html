@@ -21,7 +21,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="index.css" />
-    <title>Index | Entrenados</title>
+    <title>Home | Entrenados</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/icon.jpg" />
   </head>
   <body>
     <!--Header-->
@@ -31,9 +32,8 @@
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="inscribirse.html">Inscripciones</a></li>
           <li><a href="">Actividades</a></li>
-          <li><a href="">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -49,11 +49,11 @@
       </div>
 
       <div class="loginDiv">
-        <input
-          type="submit"
-          class="loginBtn btn btn-primary btn-block"
-          value="Inscribite ahora"
-        />
+        <a href="inscribirse.html">
+          <button class="loginBtn btn btn-primary btn-block">
+            Inscribite ahora
+          </button>
+        </a>
       </div>
     </div>
 
@@ -87,7 +87,7 @@
 
       <div class="contenedor-franja">
         <div class="icon-franja">
-          <i class="fa-solid fa-child-reaching fa-2x p-3" style="color: "></i>
+          <i class="fa-solid fa-child-reaching fa-2x p-3"></i>
         </div>
         <div class="contenedor-texto">
           <h3>Mejora en todo sentido...</h3>
@@ -163,36 +163,32 @@
 
     <!----- Footer ------>
 
-    <div class="footer container-fluid">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-2 border-top"
-      >
-        <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
-
-        <a
-          href="/"
-          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
-        >
-          <img src="" alt="" />
-        </a>
-
-        <ul class="nav col-md-4 justify-content-end">
+    <div class="container">
+      <footer class="py-2 my-3">
+        <ul class="nav justify-content-center border-bottom pb-2 mb-2">
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">Home</a>
+            <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">Features</a>
+            <a href="actividades.html" class="nav-link px-2 text-muted"
+              >Actividades</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+            <a href="#" class="nav-link px-2 text-muted">Planes</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+            <a href="inscribirse.html" class="nav-link px-2 text-muted"
+              >Inscribirse</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">About</a>
+            <a href="contacto.html" class="nav-link px-2 text-muted"
+              >Contacto</a
+            >
           </li>
         </ul>
+        <p class="text-center text-muted">&copy; 2022 Entrenados</p>
       </footer>
     </div>
 
