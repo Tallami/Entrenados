@@ -5,71 +5,6 @@
   box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  padding: 10px 3%;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 0px 15px rgba(12, 101, 184, 1);
-}
-
-header img {
-  width: 12rem;
-  height: auto;
-  position: relative;
-  float: left;
-}
-
-li,
-a {
-  text-align: right;
-  font-weight: 500;
-  font-size: 17px;
-  text-decoration: none;
-}
-
-nav {
-  padding-top: 1%;
-}
-
-.nav-links {
-  list-style: none;
-}
-
-.nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav-links li a {
-  color: #3a393e;
-  transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:visited {
-  color: #3a393e;
-}
-
-/* Animacion Nav */
-
-.nav-links li a:hover {
-  color: rgb(12, 101, 184);
-}
-
-.nav-links li a::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: rgb(12, 101, 184);
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.nav-links li a:hover::after {
-  width: 100%;
-}
-
 /* Contacto */
 
 section {
@@ -132,34 +67,13 @@ span {
   font-size: 25px;
 }
 
-/* Whatsapp */
-
-.whatsapp {
-  width: 100%;
-  height: 100px;
-  display: inline-block;
-  position: fixed;
-  bottom: -30px;
-  left: 1840px;
-}
-
-/* Footer */
-
-.footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  padding-right: 100px;
-  padding-left: 100px;
-}
-
-@media screen and (max-width: 1317px) {
+@media (max-width: 1317px) {
   .loginBtn {
     margin-top: 10px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .titulo h1 {
     font-size: 50px;
   }
@@ -190,7 +104,7 @@ span {
   }
 }
 
-@media screen and (max-width: 679px) {
+@media (max-width: 679px) {
   .mail {
     display: flex;
     justify-content: center !important;
@@ -202,7 +116,7 @@ span {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .titulo h1 {
     font-size: 50px;
   }

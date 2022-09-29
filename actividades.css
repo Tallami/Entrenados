@@ -1,0 +1,16 @@
+.loginBtn {
+  padding: 9px 20px;
+  background-color: rgb(240, 240, 240);
+  color: rgb(12, 101, 184);
+  border: 1px solid rgb(12, 101, 184);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+
+.loginBtn:hover {
+  background-color: rgb(12, 101, 184);
+  color: #fff;
+  border: 1px solid rgb(12, 101, 184);
+}

@@ -1,75 +1,3 @@
-* {
-  font-family: "Oswald", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header {
-  display: flex;
-  padding: 10px 3%;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 0px 15px rgba(12, 101, 184, 1);
-}
-
-header img {
-  width: 12rem;
-  height: auto;
-  position: relative;
-  float: left;
-}
-
-li,
-a {
-  text-align: right;
-  font-weight: 500;
-  font-size: 17px;
-  text-decoration: none;
-}
-
-nav {
-  padding-top: 1%;
-}
-
-.nav-links {
-  list-style: none;
-}
-
-.nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav-links li a {
-  color: #3a393e;
-  transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:visited {
-  color: #3a393e;
-}
-
-/* Animacion Nav */
-
-.nav-links li a:hover {
-  color: rgb(12, 101, 184);
-}
-
-.nav-links li a::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: rgb(12, 101, 184);
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.nav-links li a:hover::after {
-  width: 100%;
-}
-
 /* Fondo */
 
 .titulo {
@@ -95,10 +23,10 @@ nav {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 920px;
   display: flex;
   align-items: center;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 320px;
 }
 
 /* Form */
@@ -127,25 +55,4 @@ nav {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 50%;
-}
-
-/* Whatsapp */
-
-.whatsapp {
-  width: 100%;
-  height: 100px;
-  display: inline-block;
-  position: fixed;
-  bottom: -30px;
-  left: 1840px;
-}
-
-/* Footer */
-
-.footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  padding-right: 100px;
-  padding-left: 100px;
 }
