@@ -193,8 +193,12 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: 546px) {
+@media (max-width: 574px) {
   .loginBtn {
     padding: 9px 5rem;
+  }
+
+  .texto-mejoras {
+    text-align: center;
   }
 }
