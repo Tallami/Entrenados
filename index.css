@@ -56,14 +56,13 @@
 
 .divisor {
   background-color: rgba(255, 255, 255, 0.788);
-  height: 150px;
   width: 100%;
   color: black;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: space-around;
-  padding: 15px;
 }
 
 .divisor h3 {
@@ -156,7 +155,7 @@
 }
 
 .loginBtn {
-  padding: 9px 225px;
+  padding: 9px 14rem;
   background-color: rgb(240, 240, 240);
   color: rgb(12, 101, 184);
   border: 1px solid rgb(12, 101, 184);
@@ -173,7 +172,7 @@
 }
 
 .loginDiv {
-  width: 30%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -192,4 +191,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 546px) {
+  .loginBtn {
+    padding: 9px 5rem;
+  }
 }
