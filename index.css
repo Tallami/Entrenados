@@ -202,3 +202,19 @@
     text-align: center;
   }
 }
+
+@media (max-width: 516px) {
+  .contenedor-texto h3,
+  p {
+    font-size: 10px;
+  }
+
+  .icon-franja {
+    font-size: 10px;
+  }
+
+  .container-icons {
+    height: 70px;
+    width: 70px;
+  }
+}

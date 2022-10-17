@@ -50,7 +50,7 @@
         <div class="titulo">
           <h1><span>INSCRIBITE</span> GRATIS</h1>
         </div>
-        <form action="" method="post">
+        <form id="form" action="" method="post">
           <div class="row">
             <div class="col">
               <input
@@ -104,11 +104,13 @@
               <select
                 class="form-select form-select-md mt-2 mb-2 text-muted"
                 aria-label=".form-select-lg example"
+                name="sexo"
+                required
               >
                 <option selected>Sexo</option>
-                <option value="1">Masculino</option>
-                <option value="2">Femenino</option>
-                <option value="3">No especificar</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="No especificar">No especificar</option>
               </select>
             </div>
           </div>
@@ -118,17 +120,25 @@
               <select
                 class="form-select form-select-md mt-2 mb-2 text-muted"
                 aria-label=".form-select-lg example"
+                name="entrenamiento"
+                required
               >
                 <option selected>Selecciona tu entrenamiento</option>
-                <option value="1">G15</option>
-                <option value="2">G9</option>
-                <option value="3">G5</option>
+                <option value="G15">G15</option>
+                <option value="G9">G9</option>
+                <option value="G5">G5</option>
+                <option value="Entrenados Corre">Entrenados Corre</option>
+                <option value="Entrenados Sport">Entrenados Sport</option>
+                <option value="Entrenados Tour">Entrenados Tour</option>
+                <option value="Entrenados Salud">Entrenados Salud</option>
+                <option value="Entrenados Weekends">Entrenados Weekends</option>
               </select>
             </div>
           </div>
 
           <div class="loginDiv">
             <input
+              id="button"
               type="submit"
               class="loginBtn btn btn-primary btn-block"
               value="Enviar"
@@ -137,6 +147,15 @@
         </form>
       </div>
     </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("37SnuEHVy3-nPVRHC");
+    </script>
 
     <!----- Whatsapp ------->
 
@@ -211,22 +230,48 @@
         </div>
       </footer>
     </div>
-
-    <script>
-      let navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
   </body>
+
+  <script>
+    let navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    const btn = document.getElementById("button");
+
+    document
+      .getElementById("form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        btn.value = "Enviando...";
+
+        const serviceID = "default_service";
+        const templateID = "template_nppaafn";
+
+        emailjs.sendForm(serviceID, templateID, this).then(
+          () => {
+            btn.value = "Enviar";
+            alert("Inscripcion Enviada Correctamente!");
+          },
+          (err) => {
+            btn.value = "Enviar";
+            alert(JSON.stringify(err));
+          }
+        );
+      });
+  </script>
 </html>
