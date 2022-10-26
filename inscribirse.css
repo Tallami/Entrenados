@@ -56,3 +56,11 @@
   margin-bottom: 20px;
   border-radius: 50%;
 }
+
+.aire {
+  display: none;
+}
+
+.centro {
+  display: none;
+}

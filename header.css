@@ -58,6 +58,7 @@ nav .fa {
 
 .nav-links li a:hover {
   color: rgb(12, 101, 184);
+  background-color: inherit;
 }
 
 .nav-links li a::after {
@@ -69,7 +70,6 @@ nav .fa {
   margin: auto;
   transition: 0.5s;
 }
-
 .nav-links li a:hover::after {
   width: 100%;
 }

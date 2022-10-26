@@ -35,8 +35,8 @@
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="index.html">INICIO</a></li>
-            <li><a href="actividades.html">ACTIVIDADES</a></li>
             <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="actividades.html">ACTIVIDADES</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -102,15 +102,18 @@
             </div>
             <div class="col">
               <select
+                id="tipoEntrenamiento"
                 class="form-select form-select-md mt-2 mb-2 text-muted"
                 aria-label=".form-select-lg example"
-                name="sexo"
+                name="Tipo de entrenamiento"
+                onchange="tipo()"
                 required
               >
-                <option selected>Sexo</option>
-                <option value="Masculino">Masculino</option>
-                <option value="Femenino">Femenino</option>
-                <option value="No especificar">No especificar</option>
+                <option>Tipo de entrenamiento</option>
+                <option value="Al aire libre">Al aire libre</option>
+                <option value="Centro de entrenamiento">
+                  Centro de entrenamiento
+                </option>
               </select>
             </div>
           </div>
@@ -124,14 +127,24 @@
                 required
               >
                 <option selected>Selecciona tu entrenamiento</option>
-                <option value="G15">G15</option>
-                <option value="G9">G9</option>
-                <option value="G5">G5</option>
-                <option value="Entrenados Corre">Entrenados Corre</option>
-                <option value="Entrenados Sport">Entrenados Sport</option>
-                <option value="Entrenados Tour">Entrenados Tour</option>
-                <option value="Entrenados Salud">Entrenados Salud</option>
-                <option value="Entrenados Weekends">Entrenados Weekends</option>
+                <option class="aire" value="G15">G15</option>
+                <option class="aire" value="G9">G9</option>
+                <option class="aire" value="G5">G5</option>
+                <option class="centro" value="Entrenados Corre">
+                  Entrenados Corre
+                </option>
+                <option class="centro" value="Entrenados Sport">
+                  Entrenados Sport
+                </option>
+                <option class="centro" value="Entrenados Tour">
+                  Entrenados Tour
+                </option>
+                <option class="centro" value="Entrenados Salud">
+                  Entrenados Salud
+                </option>
+                <option class="centro" value="Entrenados Weekends">
+                  Entrenados Weekends
+                </option>
               </select>
             </div>
           </div>
@@ -231,6 +244,34 @@
       </footer>
     </div>
   </body>
+
+  <script>
+    function tipo() {
+      let aire = document.getElementsByClassName("aire");
+      let centro = document.getElementsByClassName("centro");
+      if (
+        document.getElementById("tipoEntrenamiento").value == "Al aire libre"
+      ) {
+        for (const element of aire) {
+          element.style.display = "block";
+        }
+        for (const element of centro) {
+          element.style.display = "none";
+        }
+      } else if (
+        document.getElementById("tipoEntrenamiento").value ==
+        "Centro de entrenamiento"
+      ) {
+        for (const element of centro) {
+          element.style.display = "block";
+        }
+        for (const element of aire) {
+          element.style.display = "none";
+        }
+      }
+      console.log(document.getElementById("tipoEntrenamiento").value);
+    }
+  </script>
 
   <script>
     let navLinks = document.getElementById("navLinks");
