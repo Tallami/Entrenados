@@ -1,0 +1,40 @@
+.img {
+  display: block;
+  width: 100%;
+  background-image: url(../imagenes/fondo-apoyo.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 500px;
+}
+
+.titulo {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.titulo h1 {
+  font-size: 77px;
+}
+
+/* Galeria */
+
+#galeria {
+  max-width: 80%;
+}
+
+#galeria .col-lg-4 {
+  margin: 0;
+  padding: 20px;
+}
+
+#galeria img {
+  width: 100%;
+  height: 300px;
+  transition: 0.5s;
+}
+
+#galeria img:hover {
+  box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+  transform: translateY(-10px);
+}

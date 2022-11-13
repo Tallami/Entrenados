@@ -1,0 +1,220 @@
+/* Main Home */
+
+.fondo_home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url(../imagenes/fondohome.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box_frase {
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.box_frase h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.box_frase p {
+  font-weight: 300;
+  display: flex;
+  justify-content: left;
+  font-size: 20px;
+}
+
+.box_eslogan {
+  color: white;
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 15px;
+  font-weight: 300;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box_eslogan h1 {
+  color: rgb(12, 101, 184);
+}
+
+.boton-home:hover {
+  transition: all 0.5s;
+}
+
+.divisor {
+  background-color: rgba(255, 255, 255, 0.788);
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.divisor h3 {
+  font-size: 20px;
+  text-align: left;
+}
+
+.divisor p {
+  text-align: left;
+  font-weight: 300;
+}
+
+.contenedor-franja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-apoyo {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../imagenes/fondo-apoyo.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 35px;
+}
+
+.container-apoyo h2 {
+  color: white;
+  padding: 15px;
+}
+
+.container-apoyo p {
+  color: white;
+  padding-top: 20px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.icon-franja {
+  display: flex;
+  margin-right: 5px;
+  align-items: center;
+}
+
+.container-mejoras {
+  background-image: url(../imagenes/fondo-mejoras2.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 85px;
+  padding-top: 30px;
+}
+
+.container-texto-mejoras {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.titulo {
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.texto-mejoras {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.container-icons-texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-icons {
+  height: 100px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.233);
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginBtn {
+  padding: 9px 14rem;
+  background-color: rgb(240, 240, 240);
+  color: rgb(12, 101, 184);
+  border: 1px solid rgb(12, 101, 184);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+
+.loginBtn:hover {
+  background-color: rgb(12, 101, 184);
+  color: #fff;
+  border: 1px solid rgb(12, 101, 184);
+}
+
+.loginDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+/* Entrenadores */
+
+.rounded-circle {
+  width: 125px;
+  height: 125px;
+  border: 2px solid rgb(12, 101, 184) !important;
+  overflow: hidden;
+  background-image: url(../imagenes/perfil.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 574px) {
+  .loginBtn {
+    padding: 9px 5rem;
+  }
+
+  .texto-mejoras {
+    text-align: center;
+  }
+}
+
+@media (max-width: 516px) {
+  .contenedor-texto h3,
+  p {
+    font-size: 10px;
+  }
+
+  .icon-franja {
+    font-size: 10px;
+  }
+
+  .container-icons {
+    height: 70px;
+    width: 70px;
+  }
+}
