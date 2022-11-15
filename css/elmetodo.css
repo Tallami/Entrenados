@@ -1,9 +1,9 @@
 .img {
   display: block;
   width: 100%;
-  background-image: url(../imagenes/fondo-apoyo.jpg);
+  background-image: url(../imagenes/Elegidas\ \(13\).jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: 500px;
 }
 
