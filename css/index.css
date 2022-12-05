@@ -3,7 +3,7 @@
 .fondo_home {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
     url(../imagenes/fondohome.jpg);
   background-size: cover;
   background-position: center;
@@ -12,6 +12,47 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.botones {
+
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 15px;
+  padding-top: 100px;
+}
+
+.opciones {
+
+  background-color: rgba(0, 0, 0, 0.322);
+  border: 1px solid black;
+  color: white;
+  margin: 10px;
+  padding: 25px;
+}
+
+.boton-centro {
+  background-color: white;
+  border-radius: 20px;
+ border-width: 2px;
+  color: rgb(12, 101, 184);
+  padding: 6px;
+  margin: 5px;
+
+}
+
+.boton-centro:hover {
+
+  transition: all 0.7s;
+  color: white;
+  background-color: rgb(12, 101, 184);
+}
+
+.opciones h2 {
+color:rgb(12, 101, 184) ;
+
+}
+
 
 .box_frase {
   font-weight: bold;

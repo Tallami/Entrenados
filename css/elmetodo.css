@@ -4,7 +4,25 @@
   background-image: url(../imagenes/Elegidas\ \(13\).jpg);
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 750px;
+}
+
+.img2 {
+  display: block;
+  width: 100%;
+  background-image: url(../imagenes/Elegidas\ \(15\).jpg);
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+}
+
+.img3 {
+  display: block;
+  width: 100%;
+  background-image: url(../imagenes/carrousel2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 750px;
 }
 
 .titulo {
@@ -14,13 +32,29 @@
 }
 
 .titulo h1 {
-  font-size: 77px;
+  font-size: 50px;
+}
+
+.text-metodo {
+  font-size: 20px;
+  padding-top: 10px;
+  margin: 10px;
+  background-color: 
+}
+
+.titulo-plazas {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.fotos {
+  padding: 20px;
 }
 
 /* Galeria */
 
 #galeria {
-  max-width: 80%;
+  max-width: 90%;
 }
 
 #galeria .col-lg-4 {
