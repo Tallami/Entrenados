@@ -16,7 +16,7 @@
 .botones {
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 10px;
   padding: 15px;
   padding-top: 100px;
@@ -29,6 +29,7 @@
   color: white;
   margin: 10px;
   padding: 25px;
+  width: 400px;
 }
 
 .boton-centro {
@@ -48,10 +49,11 @@
   background-color: rgb(12, 101, 184);
 }
 
-.opciones h2 {
-color:rgb(12, 101, 184) ;
 
+.opciones h2 {
+text-align: center;
 }
+
 
 
 .box_frase {
@@ -73,6 +75,10 @@ color:rgb(12, 101, 184) ;
   display: flex;
   justify-content: left;
   font-size: 20px;
+}
+
+.box_frase span {
+  font-size: 45px;
 }
 
 .box_eslogan {
@@ -150,12 +156,19 @@ color:rgb(12, 101, 184) ;
   align-items: center;
 }
 
+.profe-in {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
 .container-mejoras {
-  background-image: url(../imagenes/fondo-mejoras2.jpg);
+  background-image: url(../imagenes/Elegidas\ \(10\).jpg);
+  height: 500px;
   background-position: center;
   background-size: cover;
   padding-bottom: 85px;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .container-texto-mejoras {
@@ -166,7 +179,6 @@ color:rgb(12, 101, 184) ;
 .titulo {
   text-align: center;
   color: white;
-  padding-top: 10px;
   padding-bottom: 40px;
 }
 
