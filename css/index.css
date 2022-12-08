@@ -14,16 +14,15 @@
 }
 
 .botones {
-
   display: flex;
+  width: 100%;
   justify-content: space-around;
-  margin: 10px;
+  margin: 20px;
   padding: 15px;
   padding-top: 100px;
 }
 
 .opciones {
-
   background-color: rgba(0, 0, 0, 0.322);
   border: 1px solid black;
   color: white;
@@ -32,29 +31,31 @@
   width: 400px;
 }
 
-.boton-centro {
-  background-color: white;
-  border-radius: 20px;
- border-width: 2px;
-  color: rgb(12, 101, 184);
-  padding: 6px;
-  margin: 5px;
+.botonDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
+.boton-centro {
+  padding: 9px 1rem;
+  background-color: rgb(240, 240, 240);
+  color: rgb(12, 101, 184);
+  border: 1px solid rgb(12, 101, 184);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
 .boton-centro:hover {
-
-  transition: all 0.7s;
-  color: white;
   background-color: rgb(12, 101, 184);
+  color: #fff;
+  border: 1px solid rgb(12, 101, 184);
 }
-
 
 .opciones h2 {
-text-align: center;
+  text-align: center;
 }
-
-
 
 .box_frase {
   font-weight: bold;
@@ -130,7 +131,7 @@ text-align: center;
 
 .container-apoyo {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(../imagenes/Elegidas\ \(1\).jpg);
+    url(../imagenes/Elegidas1.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -157,14 +158,18 @@ text-align: center;
 }
 
 .profe-in {
+  padding: 30px;
   text-align: center;
   background-color: black;
   color: white;
 }
 
 .container-mejoras {
-  background-image: url(../imagenes/Elegidas\ \(10\).jpg);
-  height: 500px;
+  background-image: url(../imagenes/Elegidas10.jpg);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   background-position: center;
   background-size: cover;
   padding-bottom: 85px;
@@ -172,7 +177,10 @@ text-align: center;
 }
 
 .container-texto-mejoras {
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
 }
