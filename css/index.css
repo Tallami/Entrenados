@@ -248,10 +248,51 @@
   height: 125px;
   border: 2px solid rgb(12, 101, 184) !important;
   overflow: hidden;
-  background-image: url(../imagenes/perfil.jpg);
+  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+} 
+
+#valen {
+  background-image:url(../imagenes/profe.jpeg) ;
+}
+
+#facu {
+  background-image: url(../imagenes/profe3.jpg);
+}
+
+#agus {
+  background-image: url(../imagenes/profe2.jpeg);
+}
+
+#sabi {
+
+  background-image: url(../imagenes/sabina.jpeg);
+}
+
+#mati {
+  background-image: url(../imagenes/profe4.jpg)
+}
+
+#leo {
+  background-image: url(../imagenes/leo.jpg);
+}
+
+#ale {
+  background-image: url(../imagenes/profile\ pic.jfif);
+}
+
+#thomas {
+  background-image: url(../imagenes/profile\ pic.jfif);
+}
+
+.profe-in {
+  background-image: url(../imagenes/parque.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 @media (max-width: 574px) {

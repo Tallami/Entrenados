@@ -19,6 +19,11 @@
   border: 1px solid rgb(12, 101, 184);
 }
 
+#lst {
+
+  margin-bottom: 32px !important; 
+}
+
 span {
   color: rgb(12, 101, 184);
 }
