@@ -37,10 +37,19 @@
 
 .text-metodo {
   font-size: 20px;
-  padding-top: 10px;
+  padding-top: 60px;
   margin: 10px;
-  background-color: 
-}
+  text-align: center;
+  color: white;
+  
+ }
+
+ .box-metodo {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(../imagenes/Elegidas\ \(9\).jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+ }
 
 .titulo-plazas {
   text-align: center;
